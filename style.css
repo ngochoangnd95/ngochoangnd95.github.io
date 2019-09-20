@@ -1,0 +1,147 @@
+body {
+    background-color: #222222;
+    margin: 0; padding: 0;
+}
+
+html, body, .container {height: 100%;}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.analog_clock {
+    position: absolute;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 400px; height: 400px;
+    background-image: url(clock\ face.jpg);
+    background-size: 100%;
+    border: 40px solid #4619af;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #5a17b37e,
+                0 0 10px #5a17b37e,
+                inset 0 0 20px #727a80d8,
+                inset 0 0 10px #727a80ea;
+    visibility: hidden;
+}
+
+.hand {
+    border-radius: 12px;
+    position: absolute;
+    top: 50%;
+    transform-origin: center top;
+}
+
+#hour {
+    width: 12px; height: 120px;
+    background-color: #662020;
+    left: calc(50% - 6px);
+}
+#minute {
+    width: 8px; height: 140px;
+    background-color: #aa2828;
+    left: calc(50% - 4px);
+}
+#second {
+    width: 4px; height: 180px;
+    background-color: #e77a7a;
+    left: calc(50% - 2px);
+}
+#axis {
+    transform: translate(-50%, -50%);
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background-color: #e77a7a;
+    left: 50%;
+}
+
+.mode {
+    position: relative;
+    float: left;
+}
+
+.mode ul {
+    margin: unset; padding: unset;
+    position: relative;
+    list-style: none;
+}
+
+.mode ul li {
+    position: relative;
+    float: left;
+    color: white;
+    box-sizing: border-box;
+    font-size: 24px;
+    width: 120px; height: 40px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    user-select: none; /*ngan ko cho boi den & copy*/
+}
+
+#analog_mode {
+    border: 2px solid #4619af; border-right: unset; padding-left: 20px;
+    border-radius: 100px 0 0 100px;
+    font-family: 'Arbutus Slab', serif;
+}
+#digital_mode {
+    border: 2px solid #4619af; border-left: unset; padding-right: 20px;
+    border-radius: 0 100px 100px 0;
+    font-family: 'Aldrich', sans-serif;
+    padding-top: 3px;
+}
+
+.digital_clock {
+    position: absolute;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 680px; height: 400px;
+    border: 40px solid #4619af;
+    box-shadow: 0 0 30px #5a17b37e,
+                0 0 10px #5a17b37e,
+                inset 0 0 20px #727a80d8,
+                inset 0 0 10px #727a80ea;
+    border-radius: 100px;
+    visibility: hidden;
+}
+
+.digital_clock table {
+    width: 100%; height: 100%;
+    border-collapse: collapse; /*loai bo margin giua cac o*/
+    background-color: #ffffff;
+    font-family: 'Aldrich', sans-serif;
+    border-radius: 60px;
+    overflow: hidden;
+    user-select: none; /*ngan ko cho boi den & copy*/
+}
+
+.digital_clock table td {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#hour_num {
+    width: 400px; height: 400px;
+    color: #662020;
+    font-size: 300px;
+    border-right: 1px solid black;
+}
+#minute_num {
+    width: 280px; height: 280px;
+    color: #aa2828;
+    font-size: 172px;
+    border-bottom: 1px solid black;
+}
+#second_num {
+    width: 120px;
+    color: #e77a7a;
+    font-size: 68px;
+    border-right: 1px solid black;
+}
+#ampm {
+    color: white;
+    background-color: #222222;
+    font-size: 68px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clock | Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Aldrich" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="analog_clock">
+            <div class="hand" id="hour"></div>
+            <div class="hand" id="minute"></div>
+            <div class="hand" id="second"></div>
+            <div class="hand" id="axis"></div>
+        </div>
+        <div class="digital_clock">
+            <table>
+                <tr>
+                    <td rowspan="2" id="hour_num"></td>
+                    <td colspan="2" id="minute_num"></td>
+                </tr>
+                <tr>
+                    <td id="second_num"></td>
+                    <td id="ampm"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="mode">
+            <ul>
+                <li id="analog_mode">Analog</li>
+                <li id="digital_mode">Digital</li>
+            </ul>
+        </div>
+    </div>
+    
+
+<script src="effect.js"></script>
+</body>
+</html>
