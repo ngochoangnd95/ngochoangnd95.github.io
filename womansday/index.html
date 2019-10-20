@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy Woman's Day</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+
+    <svg class="head-woman" id="hair-behind">
+        <defs>
+            <filter id="shadow3" x="0" y="0" width="200%" height="200%">
+                <feDropShadow result="shadowOut" in="SourceGraphic" dx="20" dy="0" stdDeviation="15"
+                    flood-color="#7b3340" flood-opacity="0.4" />
+            </filter>
+            <filter id="shadow4" x="0" y="0" width="200%" height="200%">
+                <feDropShadow result="shadowOut" in="SourceGraphic" dx="10" dy="0" stdDeviation="8"
+                    flood-color="#7b3340" flood-opacity="0.4" />
+            </filter>
+        </defs>
+        <path d="M 450 231 Q 462 290 484 342 Q 518 420 499 510 Q 470 626 475 650 L 0 650 L 0 0 Z" stroke="#b34558"
+            fill="#b34558" filter="url(#shadow3) url(#shadow4)" />
+        <path d="M 436 273 Q 440 361 466 425 Q 494 479 465 569 Q 444 637 451 650 L 0 650 L 0 0 Z" stroke="#c44c60"
+            fill="#c44c60" filter="url(#shadow3) url(#shadow4)" />
+        <path d="M 405 0 Q 501 103 436 273 Q 302 467 370 650 L 0 650 L 0 0 Z" stroke="#db576e" fill="#db576e"
+            filter="url(#shadow3) url(#shadow4)" />
+        <path d="M 392 0 Q 484 144 397 265 Q 250 356 334 650 L 0 650 L 0 0 Z" stroke="#d9666f" fill="#d9666f"
+            filter="url(#shadow3) url(#shadow4)" />
+    </svg>
+    <svg class="head-woman" id="face">
+        <defs>
+            <filter id="shadow1" x="0" y="0" width="200%" height="200%">
+                <feDropShadow result="shadowOut" in="SourceGraphic" dx="20" dy="0" stdDeviation="15"
+                    flood-color="#e9b9b9" flood-opacity="0.4" />
+            </filter>
+            <filter id="shadow2" x="0" y="0" width="200%" height="200%">
+                <feDropShadow result="shadowOut" in="SourceGraphic" dx="10" dy="0" stdDeviation="8"
+                    flood-color="#e9b9b9" flood-opacity="0.4" />
+            </filter>
+        </defs>
+        <path d="M 324 0 Q 399 9 415 97 Q 424 158 408 182 Q 394 213 396 226 Q 407 237 429 235 Q 414 244 398 243 
+                Q 416 275 426 299 Q 436 323 417 328 Q 379 335 401 359 Q 408 375 369 374 Q 385 379 383 394 
+                Q 358 395 368 432 Q 368 450 340 456 Q 309 452 272 431 Q 227 415 189 431 L 0 431 L 0 0 Z"
+            stroke="#e9b9b9" fill="white" filter="url(#shadow1) url(#shadow2)" />
+    </svg>
+    <svg class="head-woman" id="hair-front">
+        <defs>
+            <filter id="shadow1" x="0" y="0" width="200%" height="200%">
+                <feDropShadow result="shadowOut" in="SourceGraphic" dx="20" dy="0" stdDeviation="15"
+                    flood-color="#e9b9b9" flood-opacity="0.4" />
+            </filter>
+            <filter id="shadow2" x="0" y="0" width="200%" height="200%">
+                <feDropShadow result="shadowOut" in="SourceGraphic" dx="10" dy="0" stdDeviation="8"
+                    flood-color="#e9b9b9" flood-opacity="0.4" />
+            </filter>
+        </defs>
+        <path d="M 382 0 Q 391 66 346 138 Q 265 188 220 249 Q 178 298 232 431 Q 265 496 259 650 L 0 650 L 0 0 Z"
+            stroke="#e9b9b9" fill="#ffdde2" filter="url(#shadow1) url(#shadow2)" />
+        <path d="M 353 0 Q 317 140 232 187 Q 117 264 124 354 Q 130 453 194 540 Q 224 586 227 650 L 0 650 L 0 0 Z"
+            stroke="#e9b9b9" fill="#ffe8ec" filter="url(#shadow1) url(#shadow2)" />
+        <path d="M 327 0 Q 269 121 158 187 Q 60 244 60 368 Q 58 470 113 579 Q 129 616 130 650 L 0 650 L 0 0 Z"
+            stroke="#e9b9b9" fill="white" filter="url(#shadow1) url(#shadow2)" />
+    </svg>
+
+    <div class="greeting">
+        <p class="greeting-heading" id="greeting-heading-1">CHÚC MỪNG</p>
+        <p class="greeting-heading" id="greeting-heading-2">Ngày Phụ nữ Việt Nam</p>
+        <p class="greeting-heading" id="greeting-heading-3">20-10</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
